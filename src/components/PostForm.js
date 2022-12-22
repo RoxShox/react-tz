@@ -6,7 +6,7 @@ const PostForm = ({ create }) => {
 	const [post, setPost] = useState({
 		title: '',
 		body: '',
-		timer: Math.floor(Math.random() * (30 - 10 + 1)) + 0,
+		timer: Math.floor(Math.random() * (30 - 10 + 1)) + 10,
 	})
 
 	const addNewPost = e => {
@@ -16,7 +16,7 @@ const PostForm = ({ create }) => {
 			id: Date.now(),
 		}
 		create(newPost)
-		setPost({ title: '', body: '', timer: Math.floor(Math.random() * (30 - 10 + 1)) + 0 })
+		setPost({ title: '', body: '', timer: Math.floor(Math.random() * (30 - 10 + 1)) + 10 })
 	}
 
 	return (
