@@ -6,7 +6,6 @@ function checkBracket(str) {
 	let closeInd
 
 	for (let i = 0; i < str.length; i++) {
-		console.log(str[i])
 		openInd = open.indexOf(str[i])
 		if (openInd !== -1) {
 			stack.push(openInd)
